@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: rgba(0, 120, 255, 0.8);
+}
+
+.nav .nav-list {
+    display: flex;
+}
+
+.nav .nav-list li {
+    margin: 10px 40px;
+    list-style: none;
+}
+
+.nav .nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.welcome-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg-portfolio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.welcome-section h1 {
+    font-size: 3em;
+    padding: 10px;
+}
+
+.welcome-section p {
+    font-size: 2em;
+    color: rgb(0, 120, 255);
+}
+
+.projects-section {
+    width: 80%;
+    margin: auto;
+}
+
+.projects-section-header {
+    width: inherit;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-tile {
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: 0.8s ease-in-out;
+}
+
+.project-tile:hover {
+    border: 2px solid rgba(0, 120, 255, 0.6);
+    background-color: rgba(0, 120, 255, 0.1);
+}
+
+.btn-show-all {
+    display: block;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(0, 120, 255, 0.8);
+    text-decoration: none;
+    color: black;
+    transition: 0.6s ease-in-out;
+}
+
+.btn-show-all:hover {
+    background-color: rgb(0, 120, 255);
+    color: white;
+}
+
+.contact-section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-section-header {
+    padding: 30px;
+    font-size: 3rem;
+}
+
+.contact-section-header p {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.contact-links {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .nav .nav-list li {
+        margin: 5px 20px;
+    }
+
+    .welcome-section h1 {
+        font-size: 2em;
+    }
+
+    .welcome-section p {
+        font-size: 1em;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .contact-section-header {
+        padding: 10px;
+        font-size: 2rem;
+    }
+
+    .contact-section-header p {
+        font-size: 1rem;
+    }
+
+    .contact-links {
+        font-size: 1rem;
+        margin-bottom: 50px;
+    }
+}
